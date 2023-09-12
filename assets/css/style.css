@@ -1,0 +1,1721 @@
+@font-face {
+    font-family: "Suisse Int'l";
+    src: url('../webfonts/suisse-intl.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*=========================================================================================
+    Variables CSS Start
+ ==========================================================================================*/
+:root {
+    --primaryColor: #e00800;
+    --orange: #f46a37;
+    --green: #54c57b;
+}
+
+/*=========================================================================================
+    Variables CSS End
+ ==========================================================================================*/
+
+.section {
+    padding: 100px 0;
+}
+
+.section-pt {
+    padding-top: 100px;
+}
+
+.section-pb {
+    padding-bottom: 100px;
+}
+
+/*=========================================================================================
+    Utility CSS End
+ ==========================================================================================*/
+/*=========================================================================================
+    Typography CSS Start
+ ==========================================================================================*/
+html,
+body {
+    font-family: "Suisse Int'l", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Suisse Int'l", sans-serif;
+    color: #2f2d53;
+}
+
+a {
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.body-gray {
+    background: #f5f5f1;
+}
+
+.primary {
+    color: var(--primaryColor) !important;
+}
+
+.orange {
+    color: var(--orange) !important;
+}
+
+.green {
+    color: var(--green) !important;
+}
+
+/*=========================================================================================
+    Typography CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Header CSS Start
+ ==========================================================================================*/
+.header {
+    background: transparent;
+    padding: 16px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    background: #fff7f5 !important;
+    z-index: 9999;
+}
+
+.header .nav-link {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    padding: 0 !important;
+}
+
+.header .nav-link.active {
+    color: var(--primaryColor);
+}
+
+.header .navbar-brand {
+    position: absolute;
+}
+
+.navbar-nav {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.header .dropdown-toggle {
+    border: 1px solid #212121;
+    padding: 12px 24px !important;
+    border-radius: 5px;
+}
+
+/*=========================================================================================
+    Header CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Hero CSS Start
+ ==========================================================================================*/
+.hero-area {
+    background: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 160px 0;
+}
+
+.hero-title {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 57px;
+}
+
+.hero-text {
+    color: var(--Gray_text_0, #6e6e6e);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.polygon-collection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.spin-left-text {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.spin-left-text span {
+    color: var(--primaryColor);
+}
+
+.hero-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 55px;
+}
+
+.hero-spin-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-content {
+    max-width: 70%;
+}
+
+.hero-content .primary-btn.btn-spin {
+    width: 350px;
+}
+
+/*=========================================================================================
+    Hero CSS Start
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Quizzes CSS Start
+ ==========================================================================================*/
+.section-title {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 57px;
+}
+
+.half-circle {
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+.quizzes {
+    position: relative;
+}
+
+.circle-sm {
+    position: absolute;
+    top: 60px;
+    left: 360px;
+}
+.circle-lg {
+    position: absolute;
+    top: 0px;
+    left: 270px;
+}
+
+.circle {
+    position: absolute;
+    top: 60px;
+    left: 360px;
+}
+
+.monthly-quiz {
+    padding-top: 160px;
+}
+
+.section-title-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.available {
+    color: var(--Gray_text_0, #6e6e6e);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.quiz-details-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.single-qd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.single-qd .quiz-number {
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 28px;
+}
+
+.single-qd .quiz-number.orange {
+    color: #f46a37;
+}
+
+.single-qd .quiz-number.yellow {
+    color: #ffdd56;
+}
+
+.single-qd .quiz-number.green {
+    color: #54c57b;
+}
+
+.quizzes-lg {
+    background: #c5c7cb;
+    padding: 22px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.quizzes-lg::after {
+    position: absolute;
+    content: '';
+    background: #d9d9d9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+    border-radius: 10px;
+}
+
+.quizzes-lg::before {
+    position: absolute;
+    content: '';
+    background: #d9d9d9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+.quizzes-lg-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.quizzes-title {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.quizzes-btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
+
+.quizzes-btn {
+    color: var(--Red_primary, var(--primaryColor));
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.single-quizzes {
+    border-radius: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(194, 194, 194, 0.25);
+    box-shadow: 0px 4px 10px 0px rgba(194, 194, 194, 0.25);
+    overflow: hidden;
+}
+
+.quizes-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    -webkit-box-align: self-start;
+    -ms-flex-align: self-start;
+    align-items: self-start;
+    padding: 22px;
+}
+
+.quizes-bottom {
+    text-align: center;
+}
+
+.quizes-bottom a {
+    color: var(--Gray_text_0, #6e6e6e);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 22px;
+    display: block;
+}
+
+.quizes-bottom a:hover {
+    background: var(--primaryColor);
+    color: #fff;
+}
+
+.qt-date {
+    color: var(--Gray_text_0, #6e6e6e);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 14px;
+}
+
+.qt-title {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 27px;
+}
+
+.qt-score {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.qt-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/*=========================================================================================
+    Quizzes CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Modal CSS End
+ ==========================================================================================*/
+.goodLuckModal .modal-body {
+    padding: 30px;
+}
+
+.modal-content {
+    background: url(../images/popup-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.goodLuck {
+    background: url(../images/goodluck-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.gt-sub-title {
+    color: var(--Red_primary, var(--primaryColor));
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 33px;
+    margin-bottom: 8px;
+}
+
+.gt-title {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 40px;
+}
+
+.gd-text {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: -12px;
+    margin-left: -45px;
+}
+
+.qt-btn {
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(183, 183, 183, 0.25);
+    box-shadow: 0px 4px 10px 0px rgba(183, 183, 183, 0.25);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+}
+
+.cancel-btn {
+    color: #121212;
+    border: 1px solid #121212;
+}
+
+.cancel-btn:hover {
+    background: var(--primaryColor);
+    color: #fff;
+    border: 1px solid var(--primaryColor);
+}
+
+.quiz-btn {
+    background: var(--primaryColor);
+    color: #fff;
+    border: 1px solid var(--primaryColor);
+}
+
+.quiz-btn:hover {
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    background: transparent;
+}
+
+.cancel-btn:hover {
+    color: #fff !important;
+    background: #121212 !important;
+    border: 1px solid #121212;
+}
+
+.gt-btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.qt-col li {
+    list-style: inside;
+    color: var(--Gray_text_0, #6e6e6e);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.qt-col {
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.gl-top {
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.good-luck-box {
+    display: grid;
+    gap: 20px;
+}
+
+/*=========================================================================================
+    Modal CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Quiz Header CSS End
+ ==========================================================================================*/
+.qhc-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.quiz-month {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 65px;
+    font-size: 40px;
+}
+
+.quiz-header-content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.quiz-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quiz-pagination li a {
+    width: 45px;
+    height: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #e6e6dc;
+    color: var(--Black_text, #212121) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 18px;
+}
+
+.quiz-pagination li a.green {
+    background: #54c57b;
+}
+
+.quiz-pagination li a.orange {
+    background: #f46a37;
+}
+
+.coundown-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.quiz-header-area {
+    padding: 15px 0;
+    border: 1px solid #ededed;
+}
+
+.coundown-box h4 {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 65px;
+    font-size: 40px;
+    min-width: 115px;
+}
+
+/*=========================================================================================
+    Quiz Header CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Quiz Question CSS Start
+ ==========================================================================================*/
+.quiz-question-box {
+    min-height: 56vh;
+    padding-bottom: 70px;
+}
+
+.quiz-question-content p {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 24px;
+}
+
+.quiz-question-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.quiz-question-option label {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quiz-btn-area {
+    padding: 35px;
+    background: #fff;
+}
+
+.quiz-question-btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 36px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.quiz-question-option {
+    padding: 10px 0px;
+    margin-bottom: 24px;
+}
+
+.quiz-question-btn-box .primary-btn {
+    width: 275px !important;
+}
+
+.btn-dark {
+    background: #d9d9d9 !important;
+    border-color: #d9d9d9 !important;
+}
+
+.btn-dark.active {
+    background: #121212 !important;
+    border-color: #121212 !important;
+}
+
+.quiz-question-option {
+    position: relative;
+}
+
+.correct:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 31px;
+    height: 31px;
+    background-image: url(../images/correct.svg);
+    background-repeat: no-repeat;
+    -webkit-transform: translate(0px, -50%);
+    -ms-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
+}
+
+.wrong:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 31px;
+    height: 31px;
+    background-image: url(../images/wrong.svg);
+    background-repeat: no-repeat;
+    -webkit-transform: translate(0px, -50%);
+    -ms-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
+}
+
+.explanation {
+    color: var(--Gray_text_0, #6e6e6e);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 18px;
+    margin-left: 16px;
+    margin-top: 30px;
+}
+
+.form-check-label {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-select {
+    width: 65px;
+}
+
+.single-pairing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.pairing-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px;
+    width: 60%;
+    position: relative;
+}
+
+.q-title {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.pairing-right p {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.single-pairing .correct:after {
+    right: 70px;
+}
+.single-pairing .wrong:after {
+    right: 70px;
+}
+
+/*=========================================================================================
+    Quiz Question CSS Start
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Footer CSS Start
+ ==========================================================================================*/
+.footer-1 .footer-area {
+    background: url(../images/footer-bg.png);
+}
+
+.footer-2 .footer-area {
+    background: url(../images/footer-2-bg.png);
+}
+
+.footer-3 .footer-content-box {
+    background: url(../images/footer-3-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.footer-area {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-text {
+    color: var(--Red_primary, var(--primaryColor));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-title {
+    color: var(--White, #fff);
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 65px;
+    font-size: 57px;
+}
+
+.footer-3 .footer-title {
+    font-size: 40px;
+}
+
+.footer-2 .footer-title {
+    color: #212121;
+}
+
+.footer-2 .footer-text {
+    color: #212121;
+}
+
+.footer-btn {
+    color: var(--Red_primary, var(--primaryColor));
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-btn span {
+    margin-top: 3px;
+}
+
+.footer-3 .primary-btn.btn-dark.active {
+    max-width: 385px;
+}
+
+.footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 12px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.logo-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.divider {
+    height: 67px;
+    width: 1px;
+    background: #6e6e6e;
+}
+
+/*=========================================================================================
+    Footer CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Form CSS Start
+ ==========================================================================================*/
+.form-body {
+    min-height: 100vh;
+    background: url('../images/form-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-left-content .logo-box {
+    justify-content: center;
+}
+
+.form-left-img {
+    max-height: 600px;
+}
+
+.form-left-img img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.form-box {
+    border-radius: 20px;
+    background: #fff;
+    -webkit-box-shadow: 0px 4px 20px 0px rgba(66, 66, 66, 0.25);
+    box-shadow: 0px 4px 20px 0px rgba(66, 66, 66, 0.25);
+    overflow: hidden;
+}
+
+.form-box .form-gray {
+    background: #f5f5f5;
+}
+
+.form-title-box {
+    margin-bottom: 40px;
+}
+
+.form-title {
+    color: #212121;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form-title-box .form-subtitle {
+    color: #6e6e6e;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.form-label {
+    color: var(--Black_text, #212121);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-control {
+    padding: 12px 16px;
+    border: 1px solid #d9d9d9;
+}
+
+.single-input {
+    margin-bottom: 40px;
+}
+
+.primary-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 13px 0px 14px 0px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: var(--primaryColor);
+    outline: 0;
+    border: 1px solid var(--primaryColor);
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.dark-btn-outline {
+    width: 308px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #121212;
+    border-radius: 50px;
+    padding: 12px 24px;
+    color: var(--Black, #000);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dark-btn-outline:hover {
+    background: #121212;
+    color: #fff;
+}
+
+.form {
+    padding: 70px;
+    background: #fff;
+}
+
+.form-bottom p {
+    color: var(--Red_primary, var(--primaryColor));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.form-bottom a {
+    color: var(--Red_primary, var(--primaryColor));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 16px;
+}
+
+.back-to-signin-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: var(--Gray_text_0, #6e6e6e);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 14px;
+}
+
+.mail-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mail-text {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    line-height: 26px;
+}
+
+.resend-text {
+    color: var(--Gray_text_0, #6e6e6e);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.resend-box a {
+    color: var(--Red_primary, var(--primaryColor));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.resend-box a {
+    color: var(--Red_primary, var(--primaryColor));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*=========================================================================================
+    Form CSS Start
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Dashboard CSS Start
+ ==========================================================================================*/
+.anlytics-area {
+    padding-top: 160px;
+}
+
+.single-analytics {
+    padding: 18px 26px;
+    border-radius: 10px;
+    border: 1px solid #e7e7e7;
+    background: #fbfbfb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.analytics-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+    min-height: 45px;
+}
+
+.analytics-name {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.analytics-month {
+    color: var(--success, #54c57b);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.analytics-number {
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 40px;
+}
+
+.analytics-outof {
+    color: #7e7e7e;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.analytics-content {
+    min-height: 68px;
+}
+
+.pie-chart,
+.bar-chart {
+    height: 432px;
+    border-radius: 10px;
+    border: 1px solid #e7e7e7;
+    background: var(--White, #fff);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.legend-box {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    border-radius: 3px;
+    font-size: 14px !important;
+}
+
+.bar-legend {
+    position: absolute;
+    right: 15px;
+    top: 50px;
+}
+
+.bar-chart-box {
+    position: relative;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px !important;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+/*=========================================================================================
+    Dashboard CSS End
+ ==========================================================================================*/
+
+/*=========================================================================================
+    Table CSS End
+ ==========================================================================================*/
+.table th,
+.table td {
+    color: var(--Black_text, #212121);
+    line-height: normal;
+    padding: 26px 24px !important;
+    border: 1px solid #ddd;
+}
+
+.table th:first-child {
+    border-top-left-radius: 10px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.table {
+    /* border: 1px solid #ddd !important; */
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.table thead {
+    background: #f2f3f5 !important;
+}
+
+/*=========================================================================================
+    Table CSS End
+ ==========================================================================================*/
+
+/* Spin Wheel */
+.deal-wheel {
+    --size: clamp(250px, 80vmin, 400px);
+    --lg-hs: 0 3%;
+    --lg-stop: 50%;
+    --lg: linear-gradient(
+        hsl(var(--lg-hs) 0%) 0 var(--lg-stop),
+        hsl(var(--lg-hs) 20%) var(--lg-stop) 100%
+    );
+
+    position: relative;
+    display: grid;
+    grid-gap: calc(var(--size) / 20);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-template-areas:
+        'spinner'
+        'trigger';
+    font-family: 'Girassol', sans-serif;
+    font-size: calc(var(--size) / 21);
+    line-height: 1;
+    text-transform: lowercase;
+}
+
+.deal-wheel > * {
+    grid-area: spinner;
+}
+
+.deal-wheel .btn-spin {
+    grid-area: trigger;
+    justify-self: center;
+}
+
+.spinner {
+    position: relative;
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-template-areas: 'spinner';
+    width: var(--size);
+    height: var(--size);
+    -webkit-transform: rotate(calc(var(--rotate, 25) * 1deg));
+    -ms-transform: rotate(calc(var(--rotate, 25) * 1deg));
+    transform: rotate(calc(var(--rotate, 25) * 1deg));
+    border-radius: 50%;
+}
+
+.spinner * {
+    grid-area: spinner;
+}
+
+.prize {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 calc(var(--size) / 10) 0 calc(var(--size) / 10);
+    width: 50%;
+    height: 50%;
+    -webkit-transform-origin: center right;
+    -ms-transform-origin: center right;
+    transform-origin: center right;
+    -webkit-transform: rotate(var(--rotate));
+    -ms-transform: rotate(var(--rotate));
+    transform: rotate(var(--rotate));
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cap {
+    /*--cap-size: calc(var(--size) / 4);
+    */
+    position: relative;
+    justify-self: center;
+    width: var(--cap-size);
+    height: var(--cap-size);
+}
+
+span.text {
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/* Hide select dropdown from SVG import file */
+.cap select {
+    display: none;
+}
+
+.cap svg {
+    width: 100%;
+}
+
+.ticker {
+    position: relative;
+    left: calc(var(--size) / -15);
+    width: calc(var(--size) / 10);
+    height: calc(var(--size) / 20);
+    background: var(--lg);
+    z-index: 1;
+    -webkit-clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 50%);
+    clip-path: polygon(20% 0, 100% 50%, 20% 100%, 0% 50%);
+    -webkit-transform-origin: center left;
+    -ms-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.btn-spin:focus {
+    outline-offset: 2px;
+}
+
+.btn-spin:active {
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+}
+
+.btn-spin:disabled {
+    cursor: progress;
+    opacity: 0.25;
+}
+
+/* Spinning animation */
+.is-spinning .spinner {
+    -webkit-transition: -webkit-transform 8s cubic-bezier(0.1, -0.01, 0, 1);
+    transition: -webkit-transform 8s cubic-bezier(0.1, -0.01, 0, 1);
+    -o-transition: transform 8s cubic-bezier(0.1, -0.01, 0, 1);
+    transition: transform 8s cubic-bezier(0.1, -0.01, 0, 1);
+    transition: transform 8s cubic-bezier(0.1, -0.01, 0, 1),
+        -webkit-transform 8s cubic-bezier(0.1, -0.01, 0, 1);
+}
+
+.is-spinning .ticker {
+    -webkit-animation: tick 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation: tick 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@-webkit-keyframes tick {
+    40% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+}
+
+@keyframes tick {
+    40% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+}
+
+/* Selected prize animation */
+.prize.selected .text {
+    color: white;
+    -webkit-animation: selected 800ms ease;
+    animation: selected 800ms ease;
+}
+
+@-webkit-keyframes selected {
+    25% {
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+        text-shadow: 1vmin 1vmin 0 hsla(0 0% 0% / 0.1);
+    }
+    40% {
+        -webkit-transform: scale(0.92);
+        transform: scale(0.92);
+        text-shadow: 0 0 0 hsla(0 0% 0% / 0.2);
+    }
+    60% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        text-shadow: 0.5vmin 0.5vmin 0 hsla(0 0% 0% / 0.1);
+    }
+    75% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+    }
+    85% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes selected {
+    25% {
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
+        text-shadow: 1vmin 1vmin 0 hsla(0 0% 0% / 0.1);
+    }
+    40% {
+        -webkit-transform: scale(0.92);
+        transform: scale(0.92);
+        text-shadow: 0 0 0 hsla(0 0% 0% / 0.2);
+    }
+    60% {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        text-shadow: 0.5vmin 0.5vmin 0 hsla(0 0% 0% / 0.1);
+    }
+    75% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+    }
+    85% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Answer View Section Start */
+.a-question {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: self-start;
+    -ms-flex-align: self-start;
+    align-items: self-start;
+    color: var(--Black_text, #212121);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+    gap: 8px;
+}
+
+.answer {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+    margin-left: 0;
+    position: relative;
+    padding: 24px 0;
+}
+
+.answer-view-area hr {
+    margin-bottom: 30px;
+}
+
+.correct-answer {
+    color: var(--Gray_text_0, #6e6e6e);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.cross-btn {
+    font-size: 36px;
+}
+/* Answer View Section End */
+
+/* Pagination */
+.pagination-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.pagination-col li .pagination-number {
+    width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    background: var(--Red_primary, var(--primaryColor));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.pagination-col li .pagination-prev,
+.pagination-col li .pagination-next {
+    font-size: 20px;
+    color: #d9d9d9;
+    font-weight: bold;
+}
+
+.pagination-col li .pagination-prev.active,
+.pagination-col li .pagination-next.active {
+    color: #212121;
+}
+/* Pagination */
